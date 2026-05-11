@@ -6,13 +6,14 @@ author_profile: true
 
 ## Office
 
-Pedro Albarran
-Departamento de Fundamentos del Análisis Económico (FAE)
-Universidad de Alicante
-Campus de San Vicente
-03690 San Vicente del Raspeig — Spain
+Pedro Albarran  
+Department of Economic Analysis (FAE)  
+University of Alicante  
+Campus de San Vicente  
+03690 San Vicente del Raspeig (Alicante) — Spain
 
-Office **0031P2019**
+Office: [0031P2019](https://sigua.ua.es/index.html?id=0031P2019)  
+(Faculty of Economics and Business, Building 31, second floor (top floor), office 19)
 
 ## Email
 
@@ -21,5 +22,4 @@ Office **0031P2019**
 
 ## Phone
 
-- Tel: +34 965 90 3400 (ext. 3228)
-- Fax: +34 965 90 3898
+- Phone: +34 965 90 3400 (ext. 3228)
