@@ -39,7 +39,11 @@ layout: default
         {% elsif page.category == 'manuscripts' and page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.category == 'workinprogress' and page.venue and page.date %}
-          <p><i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% if page.venue contains 'Working Paper' or page.venue contains 'Discussion Paper' %}
+            <p>{{ page.venue }}, {{ page.date | date: "%Y" }} </p>
+          {% else %}
+            <!-- Hide 'Revise and resubmit' and similar statuses from header, only show in citation below -->
+          {% endif %}
         {% elsif page.date and page.category != 'workinprogress' %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
